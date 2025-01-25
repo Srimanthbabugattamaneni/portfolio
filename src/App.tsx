@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import pic1 from './pic1.jpg';
 
-import { Github, Linkedin, MapPin, Globe, Cloud, TestTube, Lock, Server, Database, Gauge, GraduationCap, Mail, Send } from 'lucide-react';
+import { Github, Linkedin, MapPin, Globe, Cloud, TestTube, Lock, Server, Database, Gauge, GraduationCap, Mail, Send, MessageSquare, GitBranch, TestTubes, Building2 } from 'lucide-react';
 
 function App() {
   const [email, setEmail] = useState('');
@@ -131,6 +131,59 @@ function App() {
                     Graduated with a Bachelor of Technology in Mechanical Enginnering, where I focused on coursework in 
                     Data Structures ,Database Management, Operating Systems, and Algorithm Design.
                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+</section>
+
+<section>
+   {/* Experience Section */}
+   <div className="max-w-7xl mx-auto mt-32">
+          <div className="text-center mb-16">
+            <span className="px-4 py-2 rounded-full bg-gray-800 text-sm font-medium inline-block mb-4">
+              Experience
+            </span>
+            <h2 className="text-3xl font-bold mb-4">Professional Journey</h2>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8">
+            <div className="bg-gray-800/50 rounded-xl p-8 hover:bg-gray-800/70 transition-all">
+              <div className="flex items-start gap-6">
+                <div className="bg-green-500/10 p-3 rounded-lg">
+                  <Building2 className="w-8 h-8 text-green-400" />
+                </div>
+                <div className="flex-1">
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <h3 className="text-xl font-bold text-green-400">Software Engineer</h3>
+                      <p className="text-gray-400 mt-1">Nuronics - Hyderabad, India</p>
+                    </div>
+                    <span className="text-gray-400">May 2022 - July 2022</span>
+                  </div>
+                  <div className="mt-4 space-y-4">
+                    <div className="flex items-start gap-3">
+                      <MessageSquare className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                      <p className="text-gray-300">Developed an application to manage AI-driven voice interactions, meaning-based document search, and speech recognition using React for the frontend and Node.js for the backend.</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <GitBranch className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                      <p className="text-gray-300">Built a REST API that receives data from Apache Kafka using Node.js and Express.js. The processed data is then efficiently pushed to the dashboard, achieving a 30 percent reduction in data processing latency and ensuring high availability and scalability for data management.</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <TestTubes className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                      <p className="text-gray-300">Resolved customer-reported issues and automated frontend testing using Playwright, ensuring robust application performance and reliability.</p>
+                    </div>
+                  </div>
+                  <div className="flex flex-wrap gap-2 mt-6">
+                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">React</span>
+                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Node.js</span>
+                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Express.js</span>
+                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Apache Kafka</span>
+                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Playwright</span>
+                    <span className="px-3 py-1 bg-gray-700 rounded-full text-sm">REST API</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -366,7 +419,7 @@ function App() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     className="w-full px-4 py-3 bg-gray-900/50 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-colors text-white"
-                    placeholder="john@example.com"
+                    placeholder=""
                     required
                   />
                 </div>
