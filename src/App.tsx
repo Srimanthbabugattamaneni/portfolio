@@ -10,7 +10,7 @@ function App() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission here
-    window.location.href = `mailto:amit@example.com?subject=Portfolio Contact&body=${encodeURIComponent(message)}`;
+    window.location.href = `mailto:gattamaneni.s@example.com?subject=Portfolio Contact&body=${encodeURIComponent(message)}`;
   };
 
   return (
@@ -460,7 +460,7 @@ function App() {
       <footer className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex justify-between items-center">
-            <p className="text-gray-400">© {new Date().getFullYear()} Amit. All rights reserved.</p>
+            <p className="text-gray-400">© {new Date().getFullYear()} All rights reserved.</p>
             <div className="flex space-x-4">
               <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
                 <Github className="w-5 h-5" />
